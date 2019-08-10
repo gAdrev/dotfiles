@@ -21,8 +21,9 @@ EDITOR=vim
 # aliases
 alias ll="ls -l"
 
-for s in $HOME/.bash_source.d/*
-do
-	source "$s"
-done
-
+if [ -d $HOME/.bash_source.d ]; then
+	for s in $HOME/.bash_source.d/*
+	do
+		source "$s"
+	done
+fi
