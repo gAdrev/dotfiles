@@ -51,3 +51,6 @@ if [ -d "$HOME/.vim" ]; then
 	cp "$CP_FLAGS" "$SCRDIR/vim/pack/pull.sh" "$HOME/.vim/pack/pull.sh"
 fi
 
+# i3
+"$SCRDIR/i3/install.sh"
+
