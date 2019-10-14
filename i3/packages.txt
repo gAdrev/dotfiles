@@ -1,0 +1,3 @@
+i3status
+suckless-tools
+feh
