@@ -1,9 +1,4 @@
-echo "$(date) Running .xinitrc..." >> $HOME/xinitrc.log
-
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
-
-echo "$(date) SSH_AUTH_SOCK: $SSH_AUTH_SOCK" >>$HOME/xinitrc.log
-
 export SSH_AUTH_SOCK
 
 # disable touchpad
