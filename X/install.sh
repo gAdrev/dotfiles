@@ -9,4 +9,5 @@ SCRDIR="$(readlink -f $(dirname "$0"))"
 CP_FLAGS="-vi"  # default cp options
 
 cp $CP_FLAGS "$SCRDIR/.Xresources" "$HOME/.Xresources"
+cp $CP_FLAGS "$SCRDIR/.Xprofile" "$HOME/.Xprofile"
 
