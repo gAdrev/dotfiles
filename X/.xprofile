@@ -6,3 +6,5 @@ xinput set-prop 14 316 0
 
 # faster keys
 xset r rate 300 60
+
+/usr/bin/nm-applet &
