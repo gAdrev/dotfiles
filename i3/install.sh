@@ -10,6 +10,10 @@ CP_FLAGS="-vi"  # default cp options
 
 genconfig() {
     SECONDARY_NAME=$(xrandr | grep " connected" | grep -v primary | cut -d' ' -f1)
+    if [ -z "$SECONDARY_NAME" ]; then
+        SECONDARY_NAME=primary
+    fi
+
     TEMP_CONFIG="$(mktemp)"
     cat <<EOF >"$TEMP_CONFIG"
 workspace 1 output primary
