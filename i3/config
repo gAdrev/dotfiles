@@ -160,13 +160,3 @@ bar {
         status_command i3status
         tray_output primary
 }
-
-workspace 1 output primary
-workspace 2 output secondary
-workspace 3 output primary
-workspace 4 output secondary
-workspace 5 output primary
-workspace 6 output secondary
-workspace 7 output primary
-workspace 8 output secondary
-workspace 9 output primary
