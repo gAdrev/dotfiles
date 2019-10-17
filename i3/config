@@ -160,3 +160,21 @@ bar {
         status_command i3status
         tray_output primary
 }
+
+# Launch mode
+
+mode "launch" {
+    bindsym f exec "firefox" ; mode "default"
+    bindsym p exec "pavucontrol" ; mode "default"
+    bindsym e exec "pcmanfm" ; mode "default"
+    bindsym r exec urxvt -e "ranger" ; mode "default"
+    bindsym s exec "slack" ; mode "default"
+    bindsym v exec "gvim" ; mode "default"
+    bindsym t exec "i3-sensible-terminal" ; mode "default"
+
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym Ctrl+C mode "default"
+}
+
+bindsym $mod+o mode "launch"
