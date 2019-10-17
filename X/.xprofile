@@ -2,7 +2,13 @@ eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 
 # disable touchpad
-xinput set-prop 14 316 0
+# synclient MaxTapTime=0
+XID_TOUCHPAD=$(xinput -list |grep -i touchpad|grep -o "id=[0-9]*"|cut -d= -f2)
+if ! [ -z "$XID_TOUCHPAD" ]
+then
+    XPROP_ID_TAP=$(xinput list-props $XID_TOUCHPAD |grep "Tap Action" | grep -o "([0-9]\+)" | tr -d '()')
+    xinput set-prop $XID_TOUCHPAD $XPROP_ID_TAP 0
+fi
 
 # faster keys
 xset r rate 300 60
