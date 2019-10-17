@@ -36,7 +36,10 @@ if [ "$FORCE" -gt 0 ]; then
 fi
 
 # bash
-cp "$CP_FLAGS" "$SCRDIR/bash/.bashrc" "$HOME/.bashrc"
+echo "Skipping .bashrc, add manually if you like with:"
+echo -e "\t"'cp "$CP_FLAGS" "$SCRDIR/bash/.bashrc" "$HOME/.bashrc"'
+
+# cp "$CP_FLAGS" "$SCRDIR/bash/.bashrc" "$HOME/.bashrc"
 
 # tmux
 cp "$CP_FLAGS" "$SCRDIR/tmux/.tmux.conf" "$HOME/.tmux.conf"
