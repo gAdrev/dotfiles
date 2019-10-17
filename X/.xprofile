@@ -1,6 +1,9 @@
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 
+eval $(ssh-agent)
+ssh-add $HOME/.ssh/syltek-id_rsa &>/dev/null
+
 # disable touchpad
 # synclient MaxTapTime=0
 XID_TOUCHPAD=$(xinput -list |grep -i touchpad|grep -o "id=[0-9]*"|cut -d= -f2)
