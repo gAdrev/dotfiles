@@ -12,7 +12,7 @@ then
     XPROP_ID_TAP=$(xinput list-props $XID_TOUCHPAD |grep "Tap Action" | grep -o "([0-9]\+)" | tr -d '()')
     XPROP_ID_EDGESCROLL=$(xinput list-props $XID_TOUCHPAD |grep "Edge Scrolling" | grep -o "([0-9]\+)" | tr -d '()')
     xinput set-prop $XID_TOUCHPAD $XPROP_ID_TAP 0
-    xinput set-prop $XID_TOUCHPAD $XPROP_ID_EDGESCROLL 0 0
+    xinput set-prop $XID_TOUCHPAD $XPROP_ID_EDGESCROLL 0 0 0
 fi
 
 # faster keys
