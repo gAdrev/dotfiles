@@ -10,3 +10,10 @@ iosevka font:
     rm -rf iosevka-term
     rm 02-iosevka-term-2.3.2.zip
 
+urxvt resize-font extension:
+
+    cd /tmp
+    wget 'https://raw.githubusercontent.com/simmel/urxvt-resize-font/master/resize-font'
+    mkdir -p $HOME/.urxvt/ext
+    mv resize-font $HOME/.urxvt/ext
+
