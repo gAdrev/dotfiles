@@ -188,3 +188,10 @@ mode "launch" {
 }
 
 bindsym $mod+o mode "launch"
+
+# Audio control
+
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+
