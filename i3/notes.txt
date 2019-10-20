@@ -9,3 +9,7 @@ File explorer association:
 		~/.local/share/applications/mimeapps.list
 		~/.local/share/applications/mimeapps.list
 		/usr/share/applications/mimeinfo.cache
+
+Sudoers for shutdown/reboot (use visudo):
+
+    javier	ALL = NOPASSWD: /sbin/shutdown, /sbin/reboot
