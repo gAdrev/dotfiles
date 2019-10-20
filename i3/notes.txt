@@ -1,0 +1,11 @@
+File explorer association:
+	https://unix.stackexchange.com/questions/333254/set-standard-file-browser-for-open-containing-folder
+
+	1) Set with:
+		xdg-mime default pcmanfm.desktop inode/directory	
+		xdg-mime query default inode/directory	# to query
+	
+	2) Tweak inode/directory at:
+		~/.local/share/applications/mimeapps.list
+		~/.local/share/applications/mimeapps.list
+		/usr/share/applications/mimeinfo.cache
