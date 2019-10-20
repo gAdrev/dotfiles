@@ -4,7 +4,7 @@
 declare -A opts=( [NO]="" [YES]="" [SHUTDOWN]="" [REBOOT]="" )
 
 #while [ "$select" != "NO" -a "$select" != "YES" ]; do
-while ! [ -v opts["$select" ] ]
+while ! [ -v opts["$select"] ]
 do
     select=$(echo -e 'NO\nYES\nSHUTDOWN\nREBOOT' | \
     dmenu \
