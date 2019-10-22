@@ -44,16 +44,7 @@ echo -e "\t"'cp "$CP_FLAGS" "$SCRDIR/bash/.bashrc" "$HOME/.bashrc"'
 # tmux
 cp "$CP_FLAGS" "$SCRDIR/tmux/.tmux.conf" "$HOME/.tmux.conf"
 
-# vim
-if [ -d "$HOME/.vim" ]; then
-	cp "$CP_FLAGS" "$SCRDIR/vim/vimrc" "$HOME/.vim/vimrc"
-
-	# vim8 packages: .vim/pack/<category>/{opt,start} folders
-	# the pull script at pack should set up evreything
-	mkdir -p "$HOME/.vim/pack"
-	cp "$CP_FLAGS" "$SCRDIR/vim/pack/pull.sh" "$HOME/.vim/pack/pull.sh"
-fi
-
 # i3
 "$SCRDIR/i3/install.sh"
+"$SCRDIR/X/install.sh"
 
