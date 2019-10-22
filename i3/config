@@ -30,6 +30,9 @@ font pango:Courier 10 Pitch 11
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# don't steal focus hovering over a window
+focus_follows_mouse no
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
