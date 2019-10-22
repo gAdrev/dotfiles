@@ -100,7 +100,7 @@ bindsym $mod+a focus parent
 bindsym $mod+1 workspace 1
 bindsym $mod+Mod2+KP_1 workspace 1
 bindsym $mod+2 workspace 2
-bindsym $mod+Mod2+KP2 workspace 2
+bindsym $mod+Mod2+KP_2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+Mod2+KP_3 workspace 3
 bindsym $mod+4 workspace 4
