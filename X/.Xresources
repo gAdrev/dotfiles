@@ -75,7 +75,8 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 
 !  -- KEYBOARD-SELECT --
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-Escape:           perl:keyboard-select:activate
+URxvt.keyboard-select.clipboard: true
 
 !  -- RESIZE-FONT --
 
