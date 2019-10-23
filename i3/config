@@ -43,6 +43,9 @@ bindsym Mod1+F4 kill
 # lock screen
 bindsym --release Ctrl+Mod1+L exec slock
 
+# print screen
+bindsym Print exec gnome-screenshot -i
+
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 bindsym Mod1+F2 exec dmenu_run  # access by program name
