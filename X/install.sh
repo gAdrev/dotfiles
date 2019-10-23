@@ -15,3 +15,7 @@ then
     cp $CP_FLAGS "$SCRDIR/reposition_workspaces.sh" "$HOME/bin/"
 fi
 
+PERLSDIR="$HOME/.urxvt/ext"
+[ -d "$PERLSDIR" ] || mkdir -p "$PERLSDIR"
+
+cp $CP_FLAGS "$SCRDIR"/../sw/rxvt/perls/* "$PERLSDIR"
