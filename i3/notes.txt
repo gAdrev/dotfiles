@@ -12,4 +12,4 @@ File explorer association:
 
 Sudoers for shutdown/reboot (use visudo):
 
-    javier	ALL = NOPASSWD: /sbin/shutdown, /sbin/reboot
+    javier	ALL = NOPASSWD: /sbin/shutdown, /sbin/reboot, /usr/sbin/pm-suspend
