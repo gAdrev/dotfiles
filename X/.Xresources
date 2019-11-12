@@ -42,6 +42,12 @@
 ! dont want urxvt since it messes some ssh sessions
 URxvt.termName: xterm-256color
 
+!! URxvt scrollling
+! dont autoscroll on process output
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+
 !! URxvt Appearance
 URxvt.font: xft:Iosevka Term:style=Regular:size=12
 URxvt.boldFont: xft:Iosevka Term:style=Bold:size=12
