@@ -38,6 +38,10 @@
 *.color7: #bfbaac
 *.color15: #fdf6e3
 
+!! URxvt Terminal name
+! dont want urxvt since it messes some ssh sessions
+URxvt.termName: xterm-256color
+
 !! URxvt Appearance
 URxvt.font: xft:Iosevka Term:style=Regular:size=12
 URxvt.boldFont: xft:Iosevka Term:style=Bold:size=12
