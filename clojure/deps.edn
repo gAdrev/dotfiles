@@ -50,8 +50,12 @@
 
   ;; REPL-related tools:
   ;; - start a modern nREPL server on a random available port:
-  :nrepl {:extra-deps {nrepl {:mvn/version "RELEASE"}}
+  :nrepl {:extra-deps {nrepl {:mvn/version "0.7.0"}}
           :main-opts ["-m" "nrepl.cmdline"]}
+  ;; - start a modern nREPL server with cider middleware:
+  :cider-nrepl {:extra-deps {nrepl {:mvn/version "0.7.0"}
+                             cider/cider-nrepl {:mvn/version "0.25.2"}}
+                :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]" "--interactive"]}
   ;; - start a legacy nREPL server on port 60606:
   :nrepl/old {:extra-deps {org.clojure/tools.nrepl {:mvn/version "RELEASE"}}
               :main-opts ["-e" "(require,'[clojure.tools.nrepl.server,:refer,[start-server]]),(start-server,:port,60606)"]}
