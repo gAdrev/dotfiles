@@ -1,4 +1,6 @@
 tilix	Tiling terminal emulator
 ranger	Vim file manager
 rxvt-unicode	Terminal
+suckless-tools	dmenu & co.
+pcmanfm	File manager
 

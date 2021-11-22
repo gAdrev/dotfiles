@@ -30,8 +30,9 @@ EOF
     cat "$SCRDIR/config" "$TEMP_CONFIG" > "$SCRDIR/config.gen"
 }
 
-genconfig
-cp $CP_FLAGS "$SCRDIR/config.gen" "$HOME/.config/i3/config"
+# genconfig
+# cp $CP_FLAGS "$SCRDIR/config.gen" "$HOME/.config/i3/config"
+cp $CP_FLAGS "$SCRDIR/config" "$HOME/.config/i3/config"
 
 cp $CP_FLAGS "$SCRDIR/.i3status.conf" "$HOME/.i3status.conf"
 
