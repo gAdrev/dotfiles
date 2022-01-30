@@ -1,0 +1,31 @@
+#!/bin/bash
+
+function log() {
+    echo "$(date) $@"
+}
+
+log "Loading xrandr profile via autorandr..."
+autorandr --load three-dp
+
+# left screen
+log "Setting up left screen..."
+i3-msg "workspace 1, move workspace to output HDMI-0"
+i3-msg "workspace 5, move workspace to output HDMI-0"
+i3-msg "workspace 7, move workspace to output HDMI-0"
+
+# middle screen
+log "Setting up middle screen..."
+i3-msg "workspace 2, move workspace to output DVI-I-1"
+i3-msg "workspace 4, move workspace to output DVI-I-1"
+i3-msg "workspace 8, move workspace to output DVI-I-1"
+
+# right screen
+log "Setting up right screen..."
+i3-msg "workspace 3 move workspace to output DP-1"
+i3-msg "workspace 6, move workspace to output DP-1"
+i3-msg "workspace 9, move workspace to output DP-1"
+
+log "On workspace 1."
+i3-msg "workspace 1"
+
+log "All done."
